@@ -11,7 +11,8 @@
 int hermite_main();
 int conjugate_gradient_main();
 int spline_interpolate_main();
+int fdm_radiation_main();
 
 int main(int argc, char** argv){
-    return spline_interpolate_main();
+    return fdm_radiation_main();
 }

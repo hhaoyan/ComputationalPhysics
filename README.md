@@ -1,7 +1,7 @@
 ## Solutions for Computational Physics Exam
 
 ### Exam1
-1. Problem 1: Not yet.
+1. Problem 1: Solved by fdm_radiation.cpp, but the output is somewhat ugly.
 2. Problem 2: Not yet.
 3. Problem 3: Not yet.
 4. Problem 4: Solved by conjugate_gradient.cpp with some difficulty.
