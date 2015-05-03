@@ -5,8 +5,8 @@
 2. Problem 2: Not yet.
 3. Problem 3: Not yet.
 4. Problem 4: Solved by conjugate_gradient.cpp with some difficulty.
-5. Problem 5: Not yet.
-6. Problem 6: Gracefully solved by splint_interpolate.cpp
+5. Problem 5: Gracefully solved by sbm_linear_eq.cpp
+6. Problem 6: Gracefully solved by spline_interpolate.cpp
 7. Problem 7: Not yet.
 
 
