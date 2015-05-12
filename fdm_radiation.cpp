@@ -7,31 +7,29 @@
 //
 
 #include <iostream>
+#include <fstream>
 
-void solve_fdm(double dt){
+void solve_fdm(double dt, std::ofstream & fout){
     // dN / dt = - N
     double N = 100.0;
     
-    printf("ListLinePlot[{");
     for (double t=0.0; t<=5.0; t+= dt) {
-        printf("%s{%.4f, %.4f}", t==0.0 ? "" : ",", t, N);
-        
+        fout<<t<<' '<<N<<std::endl;
         N -= dt * N;
     }
-    printf("}]");
 }
 
-// this function solves the problem by using FDM, and writes mathematica
-// commands directly to stdout.
+// this function solves the problem by using FDM
 int fdm_radiation_main(){
     double dts[] = {0.4, 0.2, 0.1, 0.05};
-    printf("Show[");
+    
     for (int i = 0; i<sizeof(dts)/sizeof(dts[0]); ++i) {
-        if(i!=0)
-            printf(",");
-        solve_fdm(dts[i]);
+        char buf[100];
+        sprintf(buf, "/Users/huohaoyan/Desktop/output%d.txt", i);
+        std::ofstream fout(buf);
+        solve_fdm(dts[i], fout);
+        fout.close();
     }
-    printf("]");
     
     return 0;
 }
