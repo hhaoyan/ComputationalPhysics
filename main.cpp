@@ -16,5 +16,5 @@ int sbm_linear_eq_main();
 int problem3_main();
 
 int main(int argc, char** argv){
-    return problem3_main();
+    return conjugate_gradient_main();
 }

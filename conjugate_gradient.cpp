@@ -159,10 +159,8 @@ int conjugate_gradient_main(){
             b[i] = 1.5;
     }
     
-    printf("converged in %d steps\nsolution in 6 digits precision:\n", solve(x, b, N, 1e-6));
-    for (int i = 0; i<N; ++i) {
-        printf("%.6f ", x[i]);
-    }printf("\nsolution in 3 digits precision:\n");
+    printf("converged in %d steps\n", solve(x, b, N, 1e-6));
+    printf("\nsolution in 3 digits precision:\n");
     for (int i = 0; i<N; ++i) {
         printf("%.3f ", x[i]);
     }printf("\n");
