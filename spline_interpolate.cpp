@@ -12,8 +12,7 @@
 template<typename E>
 class SplineInterpolate{
     std::vector<E> fXn;
-    std::vector<E> fHn; /* the distances between x[i+1] and x[i], N=fLength-1, 
-                           valid when fUniformDistance == false*/
+    std::vector<E> fHn; /* the distances between x[i+1] and x[i], N=fLength-1 */
     std::vector<E> fYn;
     unsigned fN; /* NOTE: this is *NOT* the length of fXn!!! fN = len(fXn) - 1*/
     
