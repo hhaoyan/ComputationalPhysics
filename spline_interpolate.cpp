@@ -8,6 +8,7 @@
 
 #include <vector>
 #include <iostream>
+#include <fstream>
 
 template<typename E>
 class SplineInterpolate{
@@ -137,25 +138,12 @@ int spline_interpolate_main(){
     
     // build our interpolator, using double as the value type.
     SplineInterpolate<double> S(a, b, sizeof(a)/sizeof(a[0]));
+    std::ofstream fout("output.txt");
     
-    double left = a[0], right = 15;
-    int N = 100;
-    int Nx = sizeof(a)/sizeof(a[0]);
-    
-    std::vector<double> xn, yn;
-    
-    printf("Show[ListPlot[{");
-    for(int i = 0;i<Nx;++i){
-        printf("{%f,%f}%s", a[i], b[i], i == Nx-1? "" : "," );
+    for (double x = a[0]; x<a[sizeof(a)/sizeof(a[0])-1]; x+=0.05) {
+        fout<<x<<' '<<S.evaluate(x)<<std::endl;
     }
-    printf("}], ListLinePlot[{");
-    
-    for(int i = 0;i<=N;++i){
-        double x = left + (right - left) * i / N;
-        double y = S.evaluate(x);
-        printf("{%f,%f}%s", x, y, i == N? "" : "," );
-    }
-    printf("}]]");
+    fout.close();
     
     return 0;
 }
