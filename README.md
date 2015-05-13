@@ -6,7 +6,7 @@
 3. Problem 3(Report done): Solved by problem3.cpp.
 4. Problem 4(Report done): Solved by conjugate_gradient.cpp with some difficulty.
 5. Problem 5: Gracefully solved by sbm_linear_eq.cpp
-6. Problem 6: Gracefully solved by spline_interpolate.cpp
+6. Problem 6(Report done): Gracefully solved by spline_interpolate.cpp
 7. Problem 7: Not yet.
 
 
