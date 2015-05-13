@@ -99,10 +99,11 @@ int solve(double* x, double* b, unsigned N, double epsilon, bool init=true){
         alpha /= vector_times_vector(tmp, p, N);
         
         // update X
+        should_break = true;
         for (int i = 0; i<N; ++i) {
             double update = alpha * p[i];
-            if(std::abs(update) < epsilon)
-                should_break = true;
+            if(std::abs(update) > epsilon)
+                should_break = false;
             
             x[i] += update;
         }
