@@ -2,7 +2,7 @@
 
 ### Exam1
 1. Problem 1(Report done): Solved by fdm_radiation.cpp, but the output is somewhat ugly.
-2. Problem 2: Not yet.
+2. Problem 2(Report done): Solved by hand :)
 3. Problem 3(Report done): Solved by problem3.cpp.
 4. Problem 4(Report done): Solved by conjugate_gradient.cpp with some difficulty.
 5. Problem 5: Gracefully solved by sbm_linear_eq.cpp

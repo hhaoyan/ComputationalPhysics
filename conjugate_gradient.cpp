@@ -144,7 +144,7 @@ int solve(double* x, double* b, unsigned N, double epsilon, bool init=true){
 }
 
 int conjugate_gradient_main(){
-    unsigned N = 10000;
+    unsigned N = 100;
     
     double* x = new double[N];
     double* b = new double[N];

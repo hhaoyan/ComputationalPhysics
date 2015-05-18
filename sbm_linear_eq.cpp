@@ -98,13 +98,11 @@ public:
     }
     
     void print(){
-        printf("{");
         for (int i = 1; i<=N(); ++i) {
-            printf("{");
             for (int j = 1; j<=N(); ++j) {
-                printf("%f%s ", operator()(i,j), j==N() ? "" : ",");
+                printf("%f ", operator()(i,j));
             }
-            printf("}%s\n", i==N() ? "}" : ",");
+            printf("\n");
         }
         printf("\n");
     }
@@ -181,23 +179,24 @@ int solve_special(int N){
     solve_sbm_linear_eq(mat, B, X);
     
     if(IN_DEBUG){
-        printf("B(t):\n{");
+        printf("\nB:\n");
         for (int i = 0; i<N; ++i) {
-            printf("{%f}%s ", B[i], i==N-1?"":",");
-        }printf("}");
+            printf("%f ", B[i]);
+        }
     }
     
-    printf("\nX(t):\n{");
+    printf("\nX:\n");
     for (int i = 0; i<N; ++i) {
-        printf("{%f}%s ", X[i], i==N-1?"":",");
-    }printf("}");
+        printf("%f ", X[i]);
+    }
+    printf("\n");
     
     return 0;
 }
 
 int sbm_linear_eq_main(){
     printf("Solving N=100...\n");
-    solve_special(100);
+    solve_special(10);
     printf("\n\nSolving N=10000...\n");
     solve_special(10000);
     
