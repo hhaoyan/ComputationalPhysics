@@ -196,7 +196,7 @@ int solve_special(int N){
 
 int sbm_linear_eq_main(){
     printf("Solving N=100...\n");
-    solve_special(10);
+    solve_special(100);
     printf("\n\nSolving N=10000...\n");
     solve_special(10000);
     
