@@ -1,0 +1,47 @@
+begin solving problem
+problem solved after 5733 steps
+t: 57.33 s
+xf: 21274.4 m
+v: 344.82 m/s
+vx: 239.02 m/s
+vy: -248.537 m/s
+
+begin solving problem
+problem solved after 7120 steps
+t: 71.2 s
+xf: 22045 m
+v: 353.658 m/s
+vx: 187.487 m/s
+vy: -299.871 m/s
+
+begin solving problem
+problem solved after 8299 steps
+t: 82.99 s
+xf: 20876.5 m
+v: 369.095 m/s
+vx: 145.69 m/s
+vy: -339.124 m/s
+
+begin solving problem
+problem solved after 7137 steps
+t: 71.37 s
+xf: 43265.8 m
+v: 700.07 m/s
+vx: 606.218 m/s
+vy: -350.14 m/s
+
+begin solving problem
+problem solved after 9175 steps
+t: 91.75 s
+xf: 49199.2 m
+v: 700.106 m/s
+vx: 536.231 m/s
+vy: -450.116 m/s
+
+begin solving problem
+problem solved after 10934 steps
+t: 109.34 s
+xf: 49197.7 m
+v: 700.125 m/s
+vx: 449.951 m/s
+vy: -536.394 m/s
