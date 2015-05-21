@@ -15,7 +15,8 @@ int fdm_radiation_main();
 int sbm_linear_eq_main();
 int problem3_main();
 int solve_linear_eq_main();
+int problem7_main();
 
 int main(int argc, char** argv){
-    return sbm_linear_eq_main();
+    return problem7_main();
 }
