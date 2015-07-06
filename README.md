@@ -11,4 +11,9 @@
 
 
 ###Exam2
-Exam2 hasn't started yet.
+Exam2.
+
+### Exam3
+Exam3.
+
+Tex file rebuilt on July 6, 2015.
